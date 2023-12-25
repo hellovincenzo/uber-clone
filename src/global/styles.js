@@ -10,7 +10,7 @@ import {getStatusBarHeight} from 'react-native-status-bar-height';
 //console.log(getStatusBarHeight(true));
 
 export const colors = {
-  buttons: '#ff8c52',
+  button: '#ff8c52',
   grey: '#bebebe',
   grey1: '#43484d',
   grey2: '#5e6977',
@@ -20,7 +20,7 @@ export const colors = {
   grey6: '#eeeeee',
   grey7: '#F2f9f9',
   grey10: '#d6d6d6',
-  CardComment: '#86939e',
+  cardComment: '#86939e',
   cardbackground: 'white',
   statusbar: '#ff8c52',
   heaherText: 'white',
