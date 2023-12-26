@@ -1,8 +1,10 @@
 import * as React from 'react';
-import {Button} from 'react-native';
+
 import {NavigationProp} from '@react-navigation/native';
 
 import {HomeTemplate} from '../../templates';
+
+import {filterData} from '../../global/data';
 
 type RootStackParamList = {
   Home: undefined;
@@ -13,14 +15,13 @@ type HomeScreenProps = {
   navigation: NavigationProp<RootStackParamList, 'Home'>;
 };
 
-const HomeScreen: React.FC<HomeScreenProps> = ({navigation}) => {
+const HomeScreen: React.FC<HomeScreenProps> = () => {
   return (
-    <HomeTemplate>
-      <Button
-        title="Go to Details"
-        onPress={() => navigation.navigate('Details')}
-      />
-    </HomeTemplate>
+    <HomeTemplate
+      headingText="Destress your commute"
+      subHeadingText="Read a book. Take a nap. Stare out the window"
+      services={filterData}
+    />
   );
 };
 
